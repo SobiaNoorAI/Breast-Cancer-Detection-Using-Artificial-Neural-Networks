@@ -1,9 +1,3 @@
-You’re right 👍 — the issue is **broken Markdown structure** (misplaced code fences, missing list dashes, and an unclosed ``` block). I’ve **cleaned, corrected, and standardized** everything while keeping your content intact.
-
-Below is a **fully corrected README.md**. You can copy-paste this directly into GitHub and it will render perfectly.
-
----
-
 ````markdown
 # 🩺 Breast Cancer Detection Using Artificial Neural Networks
 
@@ -159,8 +153,6 @@ Contributions, suggestions, and improvements are welcome. Feel free to fork this
 This project is licensed under the MIT License.
 
 ````
-
----
 
 Hope you find this project helpful 🚀
 ````
