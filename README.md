@@ -1,13 +1,20 @@
+You’re right 👍 — the issue is **broken Markdown structure** (misplaced code fences, missing list dashes, and an unclosed ``` block). I’ve **cleaned, corrected, and standardized** everything while keeping your content intact.
+
+Below is a **fully corrected README.md**. You can copy-paste this directly into GitHub and it will render perfectly.
+
+---
+
 ````markdown
 # 🩺 Breast Cancer Detection Using Artificial Neural Networks
-```
+
 ## 📌 Project Overview
 
 Breast cancer is one of the leading causes of death among women worldwide. Early and accurate detection is critical for effective treatment and increased survival rates. This project implements an **Artificial Neural Network (ANN)** to detect breast cancer based on diagnostic features extracted from breast mass images.
 
-The model is trained on the **Breast Cancer Wisconsin (Diagnostic) Dataset**, which contains numerical features describing cell nuclei characteristics. The system classifies tumors into two categories
- **Malignant(M)**: Cancerous
- **Benign(B)**: Non-cancerous
+The model is trained on the **Breast Cancer Wisconsin (Diagnostic) Dataset**, which contains numerical features describing cell nuclei characteristics. The system classifies tumors into two categories:
+
+- **Malignant (M):** Cancerous  
+- **Benign (B):** Non-cancerous  
 
 ---
 
@@ -27,29 +34,39 @@ The project covers the complete machine learning pipeline, including data prepro
 - Practical application of AI in healthcare  
 
 ---
-```
+
 ## 📁 Project Structure
+
+```text
 Breast-Cancer-Detection-Using-Artificial-Neural-Networks/
 │
-├── Data/
-│ └── IMDB Dataset.csv
+├── data/
+│   └── breast_cancer_wisconsin.csv
+│
 ├── notebooks/
-│ └── Sentiment_Analysis_By_Classification_Model.ipynb
-|__plots
-| └──
-| └──
+│   └── Breast_Cancer_Detection_ANN.ipynb
+│
+├── plots/
+│   └── confusion_matrix.png
+│   └── accuracy_curve.png
+│
+├── requirements.txt
 ├── LICENSE
 └── README.md
-```
+````
+
+---
+
 ## 📂 Dataset Information
 
-- **Dataset Name:** Breast Cancer Wisconsin (Diagnostic)
-- **Source:** UCI Machine Learning Repository
-- **Number of Instances:** 569
-- **Number of Features:** 30 numerical features
-- **Target Classes:**
-  - `M` → Malignant
-  - `B` → Benign
+* **Dataset Name:** Breast Cancer Wisconsin (Diagnostic)
+* **Source:** UCI Machine Learning Repository
+* **Number of Instances:** 569
+* **Number of Features:** 30 numerical features
+* **Target Classes:**
+
+  * `M` → Malignant
+  * `B` → Benign
 
 The dataset contains no missing values and is well-suited for classification tasks.
 
@@ -57,34 +74,37 @@ The dataset contains no missing values and is well-suited for classification tas
 
 ## ⚙️ Technologies Used
 
-- **Language:** Python  
-- **Data Manipulation:** Pandas, NumPy  
-- **Visualization:** Matplotlib / Seaborn  
-- **Preprocessing:** Scikit-learn(StandardScaler, LabelEncoder)  
-- **Deep Learning:** TensorFlow / Keras  
+* **Language:** Python
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **Preprocessing:** Scikit-learn (StandardScaler, LabelEncoder)
+* **Deep Learning:** TensorFlow, Keras
 
 ---
 
 ## 🏗️ Model Architecture
 
 The Artificial Neural Network consists of:
-- **Input Layer:** 30 neurons (one for each feature)
-- **Hidden Layers:** Fully connected dense layers with ReLU activation
-- **Output Layer:** 1 neuron with Sigmoid activation (binary classification)
+
+* **Input Layer:** 30 neurons (one for each feature)
+* **Hidden Layers:** Fully connected dense layers with ReLU activation
+* **Output Layer:** 1 neuron with Sigmoid activation (binary classification)
 
 The model is optimized using:
-- **Loss Function:** Binary Cross-Entropy  
-- **Optimizer:** Adam  
-- **Evaluation Metric:** Accuracy  
+
+* **Loss Function:** Binary Cross-Entropy
+* **Optimizer:** Adam
+* **Evaluation Metric:** Accuracy
 
 ---
 
 ## 🚀 Installation & Setup
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/Breast-Cancer-Detection-Using-Artificial-Neural-Networks.git
-````
+   ```
 
 2. Navigate to the project directory:
 
@@ -98,10 +118,10 @@ The model is optimized using:
    pip install -r requirements.txt
    ```
 
-4. Run the notebook or script:
+4. Run the notebook:
 
    ```bash
-   Breast-Cancer-Detection-Using-Artificial-Neural-Networks.ipynb
+   jupyter notebook notebooks/Breast_Cancer_Detection_ANN.ipynb
    ```
 
 ---
@@ -138,5 +158,9 @@ Contributions, suggestions, and improvements are welcome. Feel free to fork this
 
 This project is licensed under the MIT License.
 
-```
+````
 
+---
+
+Hope you find this project helpful 🚀
+````
